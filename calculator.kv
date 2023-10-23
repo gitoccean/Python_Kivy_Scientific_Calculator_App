@@ -1,0 +1,242 @@
+#: import utils kivy.utils
+<TheGrid>
+    
+    input:input
+    
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        
+        TextInput:
+            id: input
+            multiline: False
+            readonly: True
+            font_size: 60
+            halign: "right"
+            size_hint: (1,.3)
+            background_normal: ''
+            background_color: utils.get_color_from_hex('#bffdff')
+            
+        
+        GridLayout:
+            cols: 5
+
+            Button:
+                text: "quad"
+                font_size: 32
+                on_press: root.act("**2")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "sqrt"
+                font_size: 32
+                on_press: root.act("**0.5")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "pow"
+                font_size: 32
+                on_press: root.act("**")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "ln"
+                font_size: 32
+                on_press: root.act("ln(")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "pi"
+                font_size: 32
+                on_press: root.act("pi")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+           # ROW
+
+            Button:
+                text: "sin"
+                font_size: 32
+                on_press: root.act("sin(")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "cos"
+                font_size: 32
+                on_press: root.act("cos(")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "tan"
+                font_size: 32
+                on_press: root.act("tan(")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: "("
+                font_size: 32
+                on_press: root.act("(")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+            Button:
+                text: ")"
+                font_size: 32
+                on_press: root.act(")")
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+
+           # ROW
+            
+            Button:
+                text: "7"
+                font_size: 32
+                on_press: root.act(7)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+                
+            Button:
+                text: "8"
+                font_size: 32
+                on_press: root.act(8)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+            
+            Button:
+                text: "9"
+                font_size: 32
+                on_press: root.act(9)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+                
+            Button:
+                text: "CL"
+                font_size: 32
+                on_press: root.clear()
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00979c')
+            
+            Button:
+                text: "<<"
+                font_size: 32
+                on_press: root.remove()
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00979c')
+            
+            #ROW
+            
+            Button:
+                text: "4"
+                font_size: 32
+                on_press: root.act(4)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+            
+            Button:
+                text: "5"
+                font_size: 32
+                on_press: root.act(5)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+            
+            Button:
+                text: "6"
+                font_size: 32
+                on_press: root.act(6)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+            
+            Button:
+                text: "+"
+                font_size: 32
+                on_press: root.act('+')
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00696d')
+            
+            Button:
+                text: "-"
+                font_size: 32
+                on_press: root.act('-')
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00696d')
+                
+            #ROW
+                
+            Button:
+                text: "1"
+                font_size: 32
+                on_press: root.act(1)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+            
+            Button:
+                text: "2"
+                font_size: 32
+                on_press: root.act(2)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+            
+            Button:
+                text: "3"
+                font_size: 32
+                on_press: root.act(3)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+                
+            Button:
+                text: "*"
+                font_size: 32
+                on_press: root.act('*')
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00696d')
+                
+            Button:
+                text: "/"
+                font_size: 32
+                on_press: root.act('/')
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00696d')
+                
+            #ROW            
+                
+            Button:
+                text: "0"
+                font_size: 32
+                on_press: root.act(0)
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+                
+            Button:
+                text: "."
+                font_size: 32
+                on_press: root.dot()
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+                
+            Button:
+                text: "x10"
+                font_size: 32
+                on_press: root.act('x10')
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#166f70')
+                
+            Button:
+                text: "ANS"
+                font_size: 32
+                on_press: root.act('ANS')
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#00979c')
+                
+            Button:
+                text: "="
+                font_size: 32
+                on_press: root.equals()
+                background_normal: ''
+                background_color: utils.get_color_from_hex('#ffa466')
